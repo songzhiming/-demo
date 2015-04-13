@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="displayLabel" destination="hG8-bF-jq5" id="Qjd-74-kmn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG8-bF-jq5">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lm6-dp-Iyb"/>
+                        <constraint firstAttribute="width" constant="42" id="rZi-va-FOu">
+                            <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="lm6-dp-Iyb"/>
+                            <exclude reference="rZi-va-FOu"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="lm6-dp-Iyb"/>
+                            <include reference="rZi-va-FOu"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxn-6a-895">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Vbl-lU-N6M"/>
+                        <constraint firstAttribute="height" constant="30" id="xA7-e4-TpE"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Vbl-lU-N6M"/>
+                            <exclude reference="xA7-e4-TpE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Vbl-lU-N6M"/>
+                            <include reference="xA7-e4-TpE"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Vxn-6a-895" secondAttribute="centerX" constant="-2" id="S3m-Q3-9N8"/>
+                <constraint firstAttribute="centerX" secondItem="hG8-bF-jq5" secondAttribute="centerX" id="Ty9-Tx-YCu"/>
+                <constraint firstItem="hG8-bF-jq5" firstAttribute="bottom" secondItem="Vxn-6a-895" secondAttribute="top" constant="-137" id="iMS-xK-ntl">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-100"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="hG8-bF-jq5" secondAttribute="centerY" constant="-0.5" id="vJb-yH-0yh"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="hG8-bF-jq5"/>
+                    <exclude reference="Vxn-6a-895"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Ty9-Tx-YCu"/>
+                    <exclude reference="iMS-xK-ntl"/>
+                    <exclude reference="vJb-yH-0yh"/>
+                    <exclude reference="S3m-Q3-9N8"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="hG8-bF-jq5"/>
+                    <include reference="Vxn-6a-895"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Ty9-Tx-YCu"/>
+                    <include reference="iMS-xK-ntl"/>
+                    <include reference="vJb-yH-0yh"/>
+                    <include reference="S3m-Q3-9N8"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
